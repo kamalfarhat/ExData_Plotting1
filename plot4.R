@@ -26,6 +26,7 @@ plot(febData$Time,febData$Sub_metering_1, type = "n", xlab = "", ylab = "Energy 
 lines(febData$Time, febData$Sub_metering_1, col = "black")
 lines(febData$Time, febData$Sub_metering_2, col = "red")
 lines(febData$Time, febData$Sub_metering_3, col = "blue")
+legend("topright", lty = 1, col = c("black", "red", "blue"), legend = c("Sub_metering_1","Sub_metering_2","Sub_metering_3"))
 #Plot3
 plot(febData$Time, febData$Voltage, type = "n", col = "black", xlab = "datetime", ylab = "Voltage")
 lines(febData$Time, febData$Voltage, col = "black")
